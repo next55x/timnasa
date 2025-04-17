@@ -59,28 +59,25 @@ router.get('/', async (req, res) => {
 				   let session = await Qr_Code_By_Fredie_Tech.sendMessage(Qr_Code_By_Fredie_Tech.user.id, { text: 'LUCKY-MD;;;=>' + b64data });
 	
 				   let FREDI_TECH_TEXT = `
-✧LUCKY MD DEVICE SUCCESSFUL CONNECTED✧
+✧TIMNASA TMD DEVICE SUCCESSFUL CONNECTED✧
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-🤦  Creator ☞ ✧FREDI EZRA✧
+🤦  Creator ☞ ✧timnasa.timothy✧
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-🫂  WhattsApp Channel ☞ https://whatsapp.com/channel/0029VasiOoR3bbUw5aV4qB31
+🫂  WhattsApp Channel ☞ https://whatsapp.com/channel/0029VajweHxKQuJP6qnjLM31
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-🥂 Contact Owne ☞ https://wa.me/255752593977
-FREDIETECH
+🥂 Contact Owne ☞ https://wa.me/255784766591
+TIMNASA
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-> ©*FREDIE TECH 2025 SCRIPT*
+> ©*TIMNASA TECH 2025 SCRIPT*
 
 _Don't Forget To Give Star To My Repo_`
-	 await Qr_Code_By_Fredie_Tech.sendMessage(Qr_Code_By_Fredie_Tech.user.id,{text:FREDI_TECH_TEXT},{quoted:session})
-
-
-
+	 await Qr_Code_By_Timnasa_Tech.sendMessage(Qr_Code_By_Timnasa_Tech.user.id,{text:TIMNASA_TECH_TEXT},{quoted:session})
 					await delay(100);
 					await Qr_Code_By_Fredie_Tech.ws.close();
 					return await removeFile("temp/" + id);
 				} else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
 					await delay(10000);
-					FREDI_TECH_QR_CODE();
+					TIMNASA_TECH_QR_CODE();
 				}
 			});
 		} catch (err) {
@@ -93,6 +90,6 @@ _Don't Forget To Give Star To My Repo_`
 			await removeFile("temp/" + id);
 		}
 	}
-	return await FREDI_TECH_QR_CODE()
+	return await TIMNASA_TECH_QR_CODE()
 });
 module.exports = router
